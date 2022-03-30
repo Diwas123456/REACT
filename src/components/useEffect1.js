@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const useEffect1 = () => {
+const LearningUseEffect = () => {
     const [resourceType, setResourceType] = useState('posts');
     console.log('render')
 
@@ -14,9 +14,11 @@ const useEffect1 = () => {
                 <button onClick={() => setResourceType('users')}>Users</button>
                 <button onClick={() => setResourceType('comments')}>Comments</button>
             </div>
-            <h1></h1>
+            <h1>
+                {resourceType}
+            </h1>
         </>
     )
 }
 
-export default useEffect1
+export default LearningUseEffect

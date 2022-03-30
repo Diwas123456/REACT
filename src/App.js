@@ -3,8 +3,10 @@ import './App.css';
 
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
-
+import LearningUseEffect from './components/useEffect1';
 import SatePractice from './components/SatePractice';
+import Slider from './components/Slider';
+import ResponsiveSite from './components/ResponsiveSite';
 function App() {
   const adminUser = {
     email: "something12@mao.com",
@@ -36,15 +38,17 @@ function App() {
   }
   return (
     <div className="App">
-      {(user.email != "") ? (
+      {/* {(user.email != "") ? (
         <div className='welcome'>
           <h2>Welcome , <span>{user.name}</span></h2>
           <button onClick={logout}>Logout</button>
         </div>
       ) :
-        <LoginForm Login={Login} error={error} />}
+        <LoginForm Login={Login} error={error} />} */}
 
       {/* <SatePractice></SatePractice> */}
+      {/* <LearningUseEffect /> */}
+      <ResponsiveSite />
     </div>
   );
 }
